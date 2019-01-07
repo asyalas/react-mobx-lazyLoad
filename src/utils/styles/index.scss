@@ -1,0 +1,11 @@
+
+// 全局引入normalize初始化css
+@import '~normalize.css/normalize.css';
+// 全局引入蚂蚁金服的css样式文件
+@import '~antd/dist/antd.min.css';
+// 全局引入sunmi-ui的css样式文件
+@import '~sunmi-ui/dist/sunmi-ui.css';
+//全局引入一些共有的样式
+@import './style.scss';
+//全局引入一些共有的工具函数
+@import './mixin.scss';

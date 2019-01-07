@@ -19,6 +19,20 @@ class App extends Component {
           >
             Learn React
           </a>
+          <a
+            className="App-link"
+            href="/hooks"
+            rel="noopener noreferrer"
+          >
+            go to hooks
+          </a>
+          <a
+            className="App-link"
+            href="/mobx"
+            rel="noopener noreferrer"
+          >
+            go to mobx
+          </a>
         </header>
       </div>
     );

@@ -1,0 +1,47 @@
+#root{
+  width: 100%;
+  height: 100%
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.primary {
+  color: #6590dc;
+}
+.bg-primary {
+  background-color: #6590dc;
+}
+
+.green {
+  color: #87d068;
+}
+
+.yellow {
+  color: #ff6900;
+}
+
+.light-yellow {
+  color: rgba(252,105,33,0.7);
+}
+
+.placeholder-text {
+  color: #ddd;
+}
+
+.bg-yellow {
+  background-color: #ff6900;
+  color: #fff;
+}
+
+.red {
+  color: #f50;
+}
+
+.bg-red {
+  background-color: #f50;
+}

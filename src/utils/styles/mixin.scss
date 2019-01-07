@@ -1,0 +1,45 @@
+// 修改input框的placeholder的颜色
+@mixin placeholder($value){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color:$value;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:$value;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:$value;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:$value;
+  }
+}
+
+// flex
+@mixin flex($justify-content:space-between,$align-item:center){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item
+}
+
+// 背景图片
+@mixin backgroundImage($src:''){
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url($src);
+}
+
+//判断当前环境的语言
+@mixin lang($lang:en){
+  &:lang(#{$lang}){
+      @if $lang-env == all{
+          @content;
+      }@else if $lang-env == $lang{
+          @content;
+      }@else{
+          
+      }
+  }
+ 
+}
